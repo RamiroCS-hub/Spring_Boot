@@ -19,5 +19,9 @@ También se pueden usar decoradores mas específicos si es que una ruta solament
 ### DEPENDENCIES
 - _**Thymeleaf**_ -> Sirve para comunicar variables desde la lógica hacia la vista. No es útil al hacer una API Rest o GraphQL.
 
+### PRINCIPIOS DE SOTWARE EN JAVA
+#### IoC
+El princio de IoC o Inversión de control se basa en dejar el control del flujo a, en este caso, el contenedor IoC de Spring boot. Esto quiere decir que Spring se va a encargar de hacer las inyección de dependencia necesarias para que todo funcione si es que se usan las anotaciones correctas (@Component para clases, @Bean para métodos). Un ejemplo es la utilización de la anotación @Service que le dice al IoC de Spring boot que esa clase tiene que ser tomada en cuenta para ser inyectada en otro lado. La mayoría de notaciones, @Repository @Service @RestController tienen dentro la anotación @Component, por eso Spring boot las detecta. 
+
 ## CONSIDERACIONES
   Si el Spring boot devTool tira error buscar la carpeta borrarla y volver a instalar la dependencia con maven
